@@ -12,12 +12,14 @@ def add_question(question, answer, a1, a2, a3):
     answer_options.append([a1, a2, a3])
 
 add_question("What is the max weight on the ramp toe in low?", "5,000 lbs", "8,500 lbs", "9,100 lbs", "10,355 lbs")
-# add_question("What is the max load on a bi-directional roller?", "2,000 lbs", "1,500", "1,940", "1,000")
+add_question("What is the max load on a bi-directional roller?", "2,000 lbs", "1,500 lbs", "1,940 lbs", "1,000 lbs")
+
+
 
 def ask_questions():
     points = 0
+    i = 0
     for question in question_list:
-        i = 0
         x = random.randint(1, 4)
         print(question)
         if x == 1:
